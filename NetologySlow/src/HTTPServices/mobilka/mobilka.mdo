@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="9f49ad28-400b-43eb-a7d2-e1576491ec09">
+  <name>mobilka</name>
+  <synonym>
+    <key>ru</key>
+    <value>Mobilka</value>
+  </synonym>
+  <rootURL>mobilka</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="36587f1d-025f-4f6a-bb70-ce54495f670c">
+    <name>ping</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ping</value>
+    </synonym>
+    <template>/ping</template>
+    <methods uuid="033e80f2-362e-45b6-9bd5-8afadf6bb3b2">
+      <name>ПроверкаДоступа</name>
+      <synonym>
+        <key>ru</key>
+        <value>Проверка доступа</value>
+      </synonym>
+      <handler>ПроверкаДоступа</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="f46725df-4b90-4797-8595-2a51e7a53f78">
+    <name>goods</name>
+    <synonym>
+      <key>ru</key>
+      <value>Goods</value>
+    </synonym>
+    <template>/goods</template>
+    <methods uuid="d4ce3a9e-73b1-4e8a-98d2-7bfdf43a3fc9">
+      <name>ПолучитьЗаказы</name>
+      <synonym>
+        <key>ru</key>
+        <value>Получить заказы</value>
+      </synonym>
+      <handler>goodsПолучитьЗаказы</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>
